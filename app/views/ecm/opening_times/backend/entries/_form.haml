@@ -1,0 +1,23 @@
+= form.association :branch
+
+.well
+  = form.input :monday
+  = form.input :tuesday
+  = form.input :wednesday
+  = form.input :thursday
+  = form.input :friday
+  = form.input :saturday
+  = form.input :sunday
+
+.well
+  #open-all-day.row
+    .col-lg-12
+      = form.input :open_all_day, as: :boolean, input_html: { data: { disables: '#opening-times input' } }
+
+  .horizontal-separator= t('or')
+  
+  #opening-times.row
+    .col-lg-6
+      = form.input :open_at, as: :string, input_html: { value: form.object.open_at }
+    .col-lg-6
+      = form.input :close_at, as: :string, input_html: { value: form.object.close_at }

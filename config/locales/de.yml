@@ -1,0 +1,5 @@
+de:
+  classes:
+    ecm/opening_times/backend/engine: "Öffnungszeiten"
+  routes:
+    ecm-opening-times-backend-engine: 'oeffnungszeiten'

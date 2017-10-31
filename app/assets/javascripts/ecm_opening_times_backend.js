@@ -1,0 +1,1 @@
+//= require ecm/opening_times/backend/application.js

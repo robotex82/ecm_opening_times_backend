@@ -1,0 +1,4 @@
+
+  localized do
+    mount Ecm::OpeningTimes::Backend::Engine, at: '/backend/ecm-opening-times'
+  end
