@@ -4,6 +4,8 @@ module Ecm
       class BranchesController < Itsf::Backend::Resource::BaseController
         include Controller::ActsAsListConcern
 
+        helper Ecm::OpeningTimes::ApplicationHelper
+
         def self.resource_class
           Ecm::OpeningTimes::Branch
         end
