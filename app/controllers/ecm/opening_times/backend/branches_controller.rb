@@ -2,7 +2,7 @@ module Ecm
   module OpeningTimes
     module Backend
       class BranchesController < Itsf::Backend::Resource::BaseController
-        include Controller::ActsAsListConcern
+        include ResourcesController::ActsAsListConcern
 
         helper Ecm::OpeningTimes::ApplicationHelper
 
