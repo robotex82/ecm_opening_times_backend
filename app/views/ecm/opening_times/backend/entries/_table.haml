@@ -1,32 +1,39 @@
 = table.association :branch, label_method: :name, url: ->(entry) { branch_path(entry.branch) }
 = table.column :monday do |resource|
   - if resource.monday
-    %div.text-center
-      %i.glyphicon.glyphicon-ok
+    - capture_haml do
+      %div.text-center
+        %i.glyphicon.glyphicon-ok
 = table.column :tuesday do |resource|
   - if resource.tuesday
-    %div.text-center
-      %i.glyphicon.glyphicon-ok
+    - capture_haml do
+      %div.text-center
+        %i.glyphicon.glyphicon-ok
 = table.column :wednesday do |resource|
   - if resource.wednesday
-    %div.text-center
-      %i.glyphicon.glyphicon-ok
+    - capture_haml do
+      %div.text-center
+        %i.glyphicon.glyphicon-ok
 = table.column :thursday do |resource|
   - if resource.thursday
-    %div.text-center
-      %i.glyphicon.glyphicon-ok
+    - capture_haml do
+      %div.text-center
+        %i.glyphicon.glyphicon-ok
 = table.column :friday do |resource|
   - if resource.friday
-    %div.text-center
-      %i.glyphicon.glyphicon-ok
+    - capture_haml do
+      %div.text-center
+        %i.glyphicon.glyphicon-ok
 = table.column :saturday do |resource|
   - if resource.saturday
-    %div.text-center
-      %i.glyphicon.glyphicon-ok
+    - capture_haml do
+      %div.text-center
+        %i.glyphicon.glyphicon-ok
 = table.column :sunday do |resource|
   - if resource.sunday
-    %div.text-center
-      %i.glyphicon.glyphicon-ok
+    - capture_haml do
+      %div.text-center
+        %i.glyphicon.glyphicon-ok
 = table.column :open_at
 = table.column :close_at
 = table.timestamps
